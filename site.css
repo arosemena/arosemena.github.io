@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  font-family: Roboto;
+  font-weight: 300;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.holder {
+  width: 100%;
+  max-width: 25em;
+}
+.name {
+  color: #fff;
+  font-size: 2.2em;
+  width: 5.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.1em;
+}
+.box {
+  font-size: 1.5em;
+  padding: 1.25em;
+  background: #fff;
+  position: relative;
+}
+.box img {
+  position: absolute;
+  top: -4em;
+  right: 1em;
+  transform: rotate(7deg);
+  width: 6em;
+}
+.box > div:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 0.95em;
+}
+svg {
+  width: 5em;
+  margin: 1em 0.85em;
+}
+svg path {
+  fill: #292929;
+  transition: all 0.75s;
+}
+a:hover svg.github path {
+  fill: #f34f29;
+}
+a:hover svg.twitter path {
+  fill: #28a9e0;
+}
